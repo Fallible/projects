@@ -27,7 +27,6 @@ def shiftDown(c):
 
 def cesarX(char, shift):
     for i in range(0, shift, 1 if shift > 0 else -1):
-        x = 0
 	if shift > 0:
             char = shiftUp(char)
         else:
@@ -38,10 +37,8 @@ def cesarString(string, shift):
     result = ''
     for char in string:
         result = result + cesarX(char, shift)
+        shift += 1
     return result
-
-def sequentialShift(char, position):
-    
 
 inputString = sys.argv[1]
 
