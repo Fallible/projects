@@ -37,7 +37,10 @@ def cesarString(string, shift):
     result = ''
     for char in string:
         result = result + cesarX(char, shift)
-        shift += 1
+	if shift > 0:
+            shift += 1
+        else:
+            shift -= 1
     return result
 
 inputString = sys.argv[1]

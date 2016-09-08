@@ -41,7 +41,7 @@ def cesarString(string, shift):
 
 inputString = sys.argv[1]
 
-cesarKey = int(sys.argv[2])
+#cesarKey = int(sys.argv[2])
 
-for n in range(0, 25):
-	print (cesarString(inputString, n))
+for i in range(0, 25):
+    print (cesarString(inputString, i))
