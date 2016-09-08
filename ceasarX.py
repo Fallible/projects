@@ -43,4 +43,5 @@ inputString = sys.argv[1]
 
 cesarKey = int(sys.argv[2])
 
-print (cesarString(inputString, cesarKey))
+for n in range(0, 25):
+	print (cesarString(inputString, n))
