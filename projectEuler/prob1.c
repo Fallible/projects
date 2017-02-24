@@ -17,6 +17,7 @@ main(){
             sum = sum + i;
         }
     }
+    printf("%i\n", sum);
 }
 
 int isFactor(int currentNumber){
