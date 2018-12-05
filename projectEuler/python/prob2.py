@@ -1,13 +1,26 @@
 #sum of even valued terms in fib sequence (Values under 4 million)
 
-def fibSum(current, prev, end):
-	if current == end:
-		return current + prev
-	if current == 1:
-		return fibSum(current + prev, current, end)
-	return fibSum(current
+MAX = 4000000
 
-def fibEvenSum(current, end):
-	if current == end: #base case
-		if
-	if
+	
+#isEven
+def is_even(input):
+	if input % 2 == 0:
+		return True
+	else:
+		return False
+
+def next_fib_number(previous, current):
+	return current + previous
+
+def main():
+	previous = 1
+	current = 1
+	sum = 0
+	while(current < MAX):
+		current = next_fib_number(previous, current)
+		if is_even(current):
+			sum += current
+	print(sum)
+
+main()
