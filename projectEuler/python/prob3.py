@@ -2,22 +2,22 @@
 #largest prime factor of 600851475143
 
 def main():
-    initial_value = 600851475143
+    #initial_value = 600851475143
     #keep a list of all factors found
     list_of_factors = []
     #Current number being divided
     dividend = 600851475143
     #Current number dividing into divisor
     divisor = 2
-    
-    while divisor < (initial_value/2) + 1:
+
+    while divisor < dividend + 1:
         print(divisor)
         calculated = divide_by_input(dividend, divisor)
         if calculated == -1:
                 divisor = divisor + 1
         else:
-                dividend = calculated
                 list_of_factors.append(divisor)
+                dividend = calculated
     print(list_of_factors)
 
 
