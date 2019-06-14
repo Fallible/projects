@@ -3,14 +3,18 @@
 #make a list of all products of 2 3 digit numbers
 list_of_products = []
 
+def is_palendrome(test_value):
+    reversed_string = str(test_value)[::-1]
+    return True if reversed_string == str(test_value) else False
+
 for i in range(100, 999):
     for j in range(100, 999):
         iXj = i * j
-        if iXj > 900000:
+        if is_palendrome(iXj):
             list_of_products.append(iXj)
 
 list_of_products.sort()
 
-def is_palendrome()
+
         
 print(list_of_products)
